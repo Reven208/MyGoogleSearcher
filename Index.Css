@@ -1,0 +1,87 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.Wallpaper {
+    background-image: url(https://c.tenor.com/xmII05NZ568AAAAC/anime-lagtrain.gif
+);
+
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+
+    background-attachment: fixed;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(80%);
+    height: 100%;
+    width: 100%;
+
+}
+
+.Center {
+    height: 200px;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    background-color: rgba(25, 25, 25, 80%);
+    width: 70vh;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+}
+
+.Input {
+    height: 50px;
+    width: 400px;
+    color: white;
+    border-style: none;
+
+    font-family: 'QuickSand', sans-serif;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgba(25, 25, 25, 90%);
+}
+
+.Center .Title {
+    margin-bottom: 120px;
+    position: fixed;
+    font-family: 'QuickSand', sans-serif;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 20px;
+}
+
+.Center .SearchButton {
+    position: fixed;
+    height: 40px;
+    width: 150px;
+    font-family: 'QuickSand', sans-serif;
+    border-style: outset;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: rgb(207, 114, 51);
+    cursor: pointer;
+
+    transition: background 0.5s;
+    color: white;
+    font-size: 14px;
+    margin-top: 130px;
+    background-color: rgba(40, 40, 40, 90%);
+
+}
+
+.SearchButton:hover {
+    background-color: rgba(60, 60, 60, 90%);
+
+}

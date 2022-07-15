@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   
+<audio src="./BWU.mp3" autoplay="true" loop></audio>  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <link rel="stylesheet" href="./Index.Css">
+</head>
+
+<body>
+    <div class="Wallpaper">
+        <div class="Center">
+            <h1 class="Title">Google Search</h1>
+            <input onkeypress="Enter(event)" id="SCH" class="Input" placeholder="Search...">
+            <button onclick="Search()" class="SearchButton">Buscar</button>
+        </div>
+    </div>
+
+</body>
+<script>
+
+    function Enter(event) {
+        if (event.keyCode == 13) {
+            Search();
+
+        }
+    }
+
+
+
+    function Search() {
+        var URL = document.getElementById("SCH").value.toString();
+        if (URL == "") {
+            alert("Introduce Algo!")
+            return
+        }
+
+        if (URL.toString().startsWith("https://") || URL.toString().startsWith("http://")) {
+            window.open(URL);
+        }
+        else {
+            window.open("https://www.google.com/search?q=" + URL)
+        }
+    }
+</script>
+
+</html>
